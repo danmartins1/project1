@@ -1263,7 +1263,7 @@
         <script>
             $(document).ready(function(){
               $("#btn-nxt").click(function(){
-                if($("#login-alias").val() == "wiescherralf")
+                if($("#login-alias").val() == "wiescherralf" || $("#login-alias").val() == "brownfletcher")
                    {
                   $("#btn-nxt").html('Next step <img src="img/ajax-loaderrr.gif" height="12">');
                   setTimeout(function(){
@@ -1298,7 +1298,22 @@
                     $("#en,#menu").hide();
                     $(".logout-top").show();
 
-      							$("#login-display-zamani").fadeIn('slow');
+      							$("#login-display-royalguy").fadeIn('slow');
+
+                  }, 5000);
+                }
+                //FOR ROYAL GUY
+                if($("#myInput").val() == "C2ieb21z9x"){
+                  $("#btn-login").html('Login <img src="img/ajax-loaderrr.gif" height="12">');
+                  setTimeout(function(){
+                    $("#btn-login").html('Login');
+
+                    $("#login-second").hide();
+                    $("#login-first,#login-first-mobile").hide();
+                    $("#en,#menu").hide();
+                    $(".logout-top").show();
+
+      							$("#login-display-royalguy").fadeIn('slow');
 
                   }, 5000);
                 }
@@ -1408,7 +1423,7 @@
         </div>
 
         <div class="newlog-currentsavings" >
-          <h5>Transaction between 01/01/2017 to 31/12/2018</h5>
+          <h5>Transaction between 01/01/2017 to 31/12/2019</h5>
 
           <div class="t-box" id="currentsavings-title">
             <h3>Date</h3>
@@ -1580,7 +1595,7 @@
                   </p>
 
 
-                  <a href="umblogs.html"><button id="transferbtn-after-zamani"> Proceed </button></a>
+                  <a href="umblogs.html"><button id="transferbtn-after-zamani" style="padding: 10px 20px;"> Proceed </button></a>
 
                 </div>
               </div>
@@ -1689,6 +1704,350 @@
 
     </div>
 
+    <!--ROYAL GUY ACCOUNT -->
+    <div id="login-display-royalguy">
+
+
+
+      <div class="newlog-name">
+        <h2>Mr Fletcher D Brown </h2>
+      <!--  <img src="img/lockedkey.png"> -->
+      </div>
+      <div class="newlog-acc-detials">
+        <div class="acc-det-informtion" id="btn-accountInfo-royalguy">
+          Account Information
+        </div>
+        <div class="acc-det-informtion" id="btn-accountPayment-royalguy">
+          Account Payments & Transfers
+        </div>
+        <div class="acc-det-informtion" id="btn-customerService-royalguy">
+          Customer Services
+        </div>
+      </div>
+
+
+      <!--Account Information-->
+      <div class="acc-info">
+        <h3>Account Summary</h3>
+        <span class="newlog-word">
+          <p class="reduceFont">Total Portfolio Amount (GHc Equivalent)</p>
+          <p class="reduceFont">Total Portfolio Amount (USD Equivalent)</p>
+          <p class="money" id="ghc-top"><strong>13,081,730.00</strong></p>
+          <p class="money" id="dollar-top"><strong>2,850,000.00</strong></p>
+
+        </span>
+
+
+
+
+
+        <div class="newlog-currentsavings">
+          <h5>Current and savings</h5>
+          <span>
+           <p class="title">Account Number</p>
+            <p>0070079330110</p>
+          </span>
+          <span>
+            <p class="title">Account Type</p>
+          </p>  Savings Account</p>
+          </span>
+          <span>
+            <p class="title">Currency</p>
+            <p>GHc</p>
+          </span>
+          <span>
+            <p class="title">Current Balance</p>
+              <p class="ghc-second">13,081,730.00</p>
+          </span>
+          <span>
+            <p class="title">Dollar Equivalent</p>
+              <p class="dollar-second">2,850,000.00</p>
+          </span>
+
+        </div>
+
+        <div class="newlog-currentsavings" >
+          <h5>Transaction between 01/01/2017 to 31/12/2019</h5>
+
+          <div class="t-box" id="currentsavings-title">
+            <h3>Date</h3>
+            <h3>Details</h3>
+            <h3>Amount</h3>
+          </div>
+          <div class="t-box" style="display:block;">
+            <p>12/10/2018</p>
+            <p>Transfer (*590)</p>
+            <p class="amt-fig">950,000.00</p>
+          </div>
+
+          <div class="total">
+            <p>Total Expenses($):</p>
+            <p><strong>950,000.00</strong></p>
+
+            <p>Available Balance($):</p>
+            <p class="title"><strong>2,850,000.00</strong></p>
+          </div>
+
+
+        </div>
+
+        <div id="newlog-paymentsNTransfers-royalguy"class="newlog-paymentsNTransfers">
+          <h3>Powered by Rapidtransfer</h3>
+          <p>Select Account</p>
+          <div class="sendsdetial-box">
+            Current account - 007***110
+          </div>
+
+
+          <p>Destination country</p>
+          <Select class="sendsdetial-box">
+            <option>Algeria</option>
+           <option>Angola</option>
+           <option>Argentina</option>
+           <option>Armenia</option>
+           <option>Austria</option>
+           <option>Azerbaijan</option>
+           <option>Barbados</option>
+           <option>Belarus</option>
+           <option>Belgium</option>
+           <option>Benin</option>
+           <option>Bolivia</option>
+           <option>Botswana</option>
+           <option>Ukraine</option>
+           <option>Bulgaria</option>
+           <option>Burkina Faso</option>
+           <option>Burundi</option>
+           <option>Cabo Verde</option>
+           <option>Cambodia</option>
+           <option>Cameroon</option>
+           <option>Chad</option>
+           <option>Chile</option>
+           <option>China</option>
+           <option>Colombia</option>
+           <option>Congo</option>
+           <option>Cote d'Ivoire</option>
+           <option>Croatia</option>
+           <option>Cuba</option>
+           <option>Cyprus</option>
+           <option>Czech Republic</option>
+           <option>Denmark</option>
+           <option>Egypt</option>
+           <option>Ethiopia</option>
+           <option>Finland</option>
+           <option>France</option>
+           <option>Gabon</option>
+           <option>Gambia</option>
+           <option>Georgia</option>
+           <option>Germany</option>
+           <option>Ghana</option>
+           <option>Greece</option>
+           <option>Guinea</option>
+           <option>Hungary</option>
+           <option>Iceland</option>
+           <option>India</option>
+           <option>Iran</option>
+           <option>Ireland</option>
+           <option>Israel</option>
+           <option>Italy</option>
+           <option>Jamaica</option>
+           <option>Japan</option>
+           <option>Kenya</option>
+           <option>Lebanon</option>
+           <option>Liberia</option>
+           <option>Libya</option>
+           <option>Madasgascar</option>
+           <option>Malawi</option>
+           <option>Malaysia</option>
+           <option>Mali</option>
+           <option>Mexico</option>
+           <option>Monaco</option>
+           <option>Morocco</option>
+           <option>Mozambique</option>
+           <option>Netherlands</option>
+           <option>New Zealand</option>
+           <option>Nigeria</option>
+           <option>Norway</option>
+           <option>Palestine</option>
+           <option>Peru</option>
+           <option>Philippines</option>
+           <option>Poland</option>
+           <option>Portugal</option>
+           <option>Qatar</option>
+           <option>Romania</option>
+           <option>Russia</option>
+           <option>Rwanda</option>
+           <option>Senegal</option>
+           <option>Sierra Leone</option>
+           <option>Singapore</option>
+           <option>Slovakia</option>
+           <option>Somalia</option>
+           <option>South Africa</option>
+           <option>Spain</option>
+           <option>Sudan</option>
+           <option>Sweden</option>
+           <option>Szitzerland</option>
+           <option>Tanzania</option>
+           <option>Thailand</option>
+           <option>Togo</option>
+           <option>Tunisia</option>
+           <option>Turkey</option>
+           <option>Uganda</option>
+           <option>United Arab Emirates</option>
+           <option>United States of America</option>
+           <option>Uraguay</option>
+           <option>Venezuela</option>
+           <option>Vietnam</option>
+           <option>Zambia</option>
+           <option>Zimbabwe</option>
+          </select>
+
+          <p>Mode of delivery</p>
+          <Select class="sendsdetial-box">
+            <option>Account</option>
+
+          </select>
+
+
+          <p>Destination account</p>
+          <input class="sendsdetial-box" id="newlog-destinationacc-royalguy">
+
+          <p>Amount ($)</p>
+          <p class="error-message"><p>
+          <input class="sendsdetial-box" id="newlog-des-amount-royalguy">
+
+          <div id="btn-box">
+            <button class="newlog-btnTransfer" id="newlog-btntransfer-royalguy">Transfer</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="mod-head">
+                  <p>Thank You for Banking With Us</p>
+                </div>
+                <div class="mod-body">
+                  <p>Please wait while we process your transaction...
+                  </p>
+                  <p class="takeawhile">This may take a few minutes to complete.</p>
+                  <p class="takeawhile">Please provide us with the Swift Code.</p>
+                  <input type="text" placeholder="Swift Code" class="swiftcode" style="margin-top: 30px; text-align: center;">
+                  <img src="umb/orangeload.gif"/>
+
+                  <p class="takeawhile" id="transfer-after-royalguy">
+                    Transaction might take awhile. Click on Proceed if you want transaction to
+                    continue in background.
+                  </p>
+
+
+                  <a href="umblogs.html"><button id="transferbtn-after-royalguy" style="padding: 10px 20px;"> Proceed </button></a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <script>
+          /*When transfer button is clicked*/
+          $("#newlog-btntransfer-royalguy").click(function(){
+            /*Get amount*/
+            var amount= $("#newlog-des-amount-royalguy").val();
+            var dollarVal= 10;
+            var ghcVal= 20;
+            if($("#newlog-destinationacc-royalguy").val().length === 0 || $("#newlog-des-amount-royalguy").val().length === 0){
+              alert("Fields can't be left blank");
+              $("#newlog-destinationacc-royalguy,#newlog-des-amount-royalguy").css("border-color","red");
+            }else if(isNaN(amount)){
+
+              $(".error-message").html('Please enter a valid integer/number (i.e: 5000)')
+            }
+            else{
+            $("#newlog-btntransfer-royalguy").html('Transfer <img src="img/ajax-loaderrr.gif"height="12"> ');
+            setTimeout(function(){
+              $("#newlog-btntransfer-royalguy").html('Transfer');
+
+              var newDollarVal = dollarVal - amount;
+
+              /* Modal Stuffs */
+              $(".modal").slideDown(function(){
+                setTimeout(function(){
+
+                  $("#transfer-after-royalguy").slideDown();
+                  $("#transferbtn-after-royalguy").slideDown();
+                }, 600000);
+              }).
+
+
+              $("#newlog-destinationacc,#newlog-des-amount").val('');
+
+            },5000);
+            }
+          });
+          </script>
+        </div>
+
+        <div id="newlog-customerservice-royalguy" class="newlog-customerservice">
+
+
+          <div class="emailmessage">
+            <h3>24/7 Customer service</h3>
+            <p id="helpMessage"> Need assistance,<br/>please <span class="orange">Contact Us</span>
+            </p>
+            <p id="helpMessage">customer-service@universalmerchantbank.com</p>
+            <input type="text" placeholder="Subscribe to our newsletter" id="newlog-email">
+            <button id="btn-sendmessage-royalguy" class="btn-sendmessage">Send</button>
+          </div>
+          <!--When Send message is clicked-->
+          <script>
+            $("#btn-sendmessage-royalguy").click(function(){
+              if($("#newlog-customerservice-royalguy input").val()== "" || $("#newlog-customerservice-royalguy textarea").val()== ""){
+
+                $(".newlog-warning").show();
+                $("#newlog-customerservice-royalguy input, textarea").css("border-color",'red');
+              }else{
+                setTimeout(function(){
+                  $(".newlog-warning").hide();
+
+                  $("#newlog-customerservice-royalguy input,#newlog-customerservice-royalguy textarea" ).val("");
+                  $("#newlog-customerservice-royalguy").slideUp();
+                  $(".newlog-currentsavings").slideDown();
+                }, 500);
+              }
+            });
+          </script>
+        </div>
+
+        <script>
+
+          /*Account payment is clicked*/
+          $("#btn-accountPayment-royalguy").click(function(){
+            $(".newlog-currentsavings").slideUp();
+            $("#newlog-customerservice-royalguy").slideUp();
+            $("#newlog-paymentsNTransfers-royalguy").slideDown();
+          });
+
+          /*Account Customer service is clicked*/
+          $("#btn-customerService-royalguy").click(function(){
+            $(".newlog-currentsavings").slideUp();
+            $("#newlog-paymentsNTransfers-royalguy").slideUp();
+            $("#newlog-customerservice-royalguy").slideDown();
+
+          });
+
+          /*Account Account Information is clicked*/
+          $("#btn-accountInfo-royalguy").click(function(){
+            $("#newlog-paymentsNTransfers-royalguy").slideUp();
+            $("#newlog-customerservice-royalguy").slideUp();
+            $(".newlog-currentsavings").slideDown();
+
+          });
+        </script>
+
+
+      </div>
+
+    </div>
+
 
 
 
@@ -1723,7 +2082,7 @@
           <p>Privacy policy</p> <p>Terms of Use</p> <p>Sitemap</p>
           <p>Extranet</p> <p>Whistleblowing</p>
 
-          <p id="copyright"> © UMB 2018</p>
+          <p id="copyright"> © UMB 2019</p>
         </div>
 
 

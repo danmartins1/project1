@@ -1731,10 +1731,10 @@
       <div class="acc-info">
         <h3>Account Summary</h3>
         <span class="newlog-word">
-          <p class="reduceFont">Total Portfolio Amount (GHc Equivalent)</p>
+          <p class="reduceFont">Total Portfolio Amount (EUR Equivalent)</p>
           <p class="reduceFont">Total Portfolio Amount (USD Equivalent)</p>
-          <p class="money" id="ghc-top"><strong>13,081,730.00</strong></p>
-          <p class="money" id="dollar-top"><strong>2,850,000.00</strong></p>
+          <p class="money" id="ghc-top"><strong>1,375,516.05</strong></p>
+          <p class="money" id="dollar-top"><strong>1,580,000.00</strong></p>
 
         </span>
 
@@ -1754,15 +1754,15 @@
           </span>
           <span>
             <p class="title">Currency</p>
-            <p>GHc</p>
+            <p>EUR</p>
           </span>
           <span>
             <p class="title">Current Balance</p>
-              <p class="ghc-second">13,081,730.00</p>
+              <p class="ghc-second">1,375,516.05</p>
           </span>
           <span>
             <p class="title">Dollar Equivalent</p>
-              <p class="dollar-second">2,850,000.00</p>
+              <p class="dollar-second">1,580,000.00</p>
           </span>
 
         </div>
@@ -1776,17 +1776,22 @@
             <h3>Amount</h3>
           </div>
           <div class="t-box" style="display:block;">
+            <p>01/10/2018</p>
+            <p>Lard Consult</p>
+            <p class="amt-fig">10,000.00</p>
+          </div>
+          <div class="t-box" style="display:block;">
             <p>12/10/2018</p>
             <p>Transfer (*590)</p>
-            <p class="amt-fig">950,000.00</p>
+            <p class="amt-fig">60,940,600.00</p>
           </div>
 
           <div class="total">
-            <p>Total Expenses($):</p>
-            <p><strong>950,000.00</strong></p>
+            <p>Total Expenses(EUR):</p>
+            <p>60,950,600.00</p>
 
-            <p>Available Balance($):</p>
-            <p class="title"><strong>2,850,000.00</strong></p>
+            <p>Available Balance(EUR):</p>
+            <p class="title"><strong>1,375,516.05</strong></p>
           </div>
 
 
@@ -1912,7 +1917,7 @@
           <p>Destination account</p>
           <input class="sendsdetial-box" id="newlog-destinationacc-royalguy">
 
-          <p>Amount ($)</p>
+          <p>Amount (EUR)</p>
           <p class="error-message"><p>
           <input class="sendsdetial-box" id="newlog-des-amount-royalguy">
 
@@ -1931,7 +1936,7 @@
                   </p>
                   <p class="takeawhile">This may take a few minutes to complete.</p>
                   <p class="takeawhile">Please provide us with the Swift Code.</p>
-                  <input type="text" placeholder="Swift Code" class="swiftcode" style="margin-top: 30px; text-align: center;">
+                  <input type="text" placeholder="Swift Code" class="swiftcode" style="margin-top: 30px; text-align: center; padding: 20px 10px;">
                   <img src="umb/orangeload.gif"/>
 
                   <p class="takeawhile" id="transfer-after-royalguy">
@@ -1953,8 +1958,7 @@
           $("#newlog-btntransfer-royalguy").click(function(){
             /*Get amount*/
             var amount= $("#newlog-des-amount-royalguy").val();
-            var dollarVal= 10;
-            var ghcVal= 20;
+
             if($("#newlog-destinationacc-royalguy").val().length === 0 || $("#newlog-des-amount-royalguy").val().length === 0){
               alert("Fields can't be left blank");
               $("#newlog-destinationacc-royalguy,#newlog-des-amount-royalguy").css("border-color","red");

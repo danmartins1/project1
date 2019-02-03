@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>UMB - User Login </title>
-  <link rel="stylesheet" type="text/css" href="log.css" media="screen and (min-width:950px)">
-  <link rel="stylesheet" type="text/css" href="log-ms.css" media="screen and (min-width:10px) and (max-width:950px)">
+  <title>UMB - The World Bank </title>
+  <link rel="stylesheet" type="text/css" href="index.css" media="screen and (min-width:1030px)">
+  <link rel="stylesheet" type="text/css" href="index-ms.css" media="screen and (min-width:10px) and (max-width:1030px)">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="shortcut icon" type="image/png" href="umb/bank-logo.png">
-
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -21,55 +16,456 @@
       <header>
 
         <div id="topHead">
-            <p id="contact-login"><img src="img/tele.png"> 233279936620</p>
-
+            <a href="umblogs.html"><p>Personal Banking</p></a>
+            <p><a href="commercial.html">Commercial Banking</a></p>
+            <p><a href="corporateNInvestment.html">Corporate and Investment Banking</a></p>
+            <p>Group</p>
 
             <div id="social">
-              <p id="contact-login"><img src="img/maill.png"> customer-service@universalmerchantbank.com</p>
-
+              <p style="color:rgb(218,187,168);">Follow us</p>
+              <p class="fa fa-youtube"></p>
+              <p class="fa fa-facebook"></p>
+              <p class="fa fa-twitter"></p>
+              <p class="fa fa-instagram"></p>
+              <p class="fa fa-linkedin"></p>
             </div>
         </div>
 
         <div id="secondHead">
-            <a href="index.html"><img src="umb/bank-logo.png" alt="UMBbanklogo" id="logo" ></a>
-
+            <a href="index.html"><img src="umb/bank-logo.png" alt="umblogo" id="logo"></a>
 
             <div id="secondThings">
 
+              <div class="items" id="hideSearch">
+                <p>Search</p>
+                <img src="img/sch.png">
+              </div>
 
+              <div class="items" id="contact-ms">
+                <p id="second-contact">Contact</p>
+                <img src="img/tele.png">
+                <div class="second-dropdown" id="contact-dropdownbox">
+                  <p>Contact</p>
+                  <a href="contact.html"><button>Get in Touch</button></a>
+                  <a href="contact.html"><button>Find a Service</button></a>
+
+                </div>
+                <script>
+                    $(document).ready(function(){
+                      $("#second-contact").click(function(){
+                        //Login dropdown Box
+                        $(".menu").hide();
+                        $("#login-dropdownbox").hide();
+                        $("#contact-dropdownbox").slideToggle('slow');
+                      });
+                    });
+                  </script>
+              </div>
+
+              <div class="items" id="login-ms">
+                <p id="second-login">Login</p>
+                <img src="img/keyyy.png">
+                <div class="second-dropdown" id="login-dropdownbox">
+                  <p>Internet Banking</p>
+                <a href="umblogs.html"><button>Personal</button></a>
+                  <a href="umblogs.html"><button>Omni</button></a>
+                  <p>Omni</p>
+                  <a href="umblogs.html"><button>Trading</button></a>
+                  <a href="umblogs.html"><button>Rapidtransfer Online</button></a>
+                  <a href="umblogs.html"><button>CashXpress</button></a>
+                </div>
+                <script>
+                  $(document).ready(function(){
+                    $("#second-login").click(function(){
+                      //Login dropdown Box
+                      $(".menu").hide();
+                        $("#contact-dropdownbox").hide();
+                      $("#login-dropdownbox").slideToggle('slow');
+                    });
+                  });
+                </script>
+              </div>
 
               <div class="items" id="en">
-                <select>
-                  <option>ENGLISH</option>
-                  <option>FRENCH</option>
-                  <option>PORTUGESE</option>
-                  <option>SPANISH</option>
-                </select>
+                <p>EN</p>
+                <img src="img/usfla.png">
               </div>
               <!-- Small SCreen -->
-              <a href="umblogs.html">
-                <div class="logout-top" id="logout-top">
-                  <img src="umb/exit.png"/>
-                </div>
-              </a>
-
               <div class="items" id="menu">
                 <p>Menu</p>
                 <img src="img/menu.png">
               </div>
+
+
+
             </div>
         </div>
 
+        <div id="thirdHead">
+
+          <div class="thItems" id="edb">
+              <p>Everyday Banking <i>  </i> </p>
+          </div>
+          <div class="thItems" id="pat">
+              <p>Payments & Transfers <i>  </i> </p>
+          </div>
+          <div class="thItems" id="wtb">
+              <p>Ways to Bank <i>  </i> </p>
+          </div>
+          <div class="thItems" id="pas">
+              <p>Products and Services <i>  </i> </p>
+          </div>
+          <div class="thItems" id="has">
+              <p>Help and Security <i>  </i> </p>
+          </div>
+
+                  <!--Catalog for everydayBanking(#edb)-->
+          <div id="everydayB" class="menu">
+
+              <div class="section">
+                  <span>
+                    <a href="everydaybank.html"><p>Everyday Banking</p></a>
+                    <p id="currentAccount">Current Accounts <i> </i></p>
+                    <p id="savingsAccount">Savings Accounts <i> </i></p>
+                    <a href="everydaybank.html"><p>e-Account</p></a>
+                    <a href="everydaybank.html"><p>Cards</p></a>
+                    <a href="everydaybank.html"><p>Loans</p></a>
+                    <a href="everydaybank.html"><p>Investment Solutions</p></a>
+                    <a href="everydaybank.html"><p>Bancassurance</p></a>
+                    <a href="everydaybank.html"><p>Apply for an account or service</p></a>
+                  </span>
+              </div>
+                <!--End-->
+
+              <div class="section" id="secondSec">
+                  <h1>Everyday Banking</h1>
+                  <p>
+                    Equipping you with the <br/>
+                    right account for the life<br/>
+                    you lead
+                  </p>
+              </div>
+                      <!-- show this when current account is hovered -->
+              <div class="section" id="secondSec-cA">
+                  <span>
+                    <a href="everydaybank.html"><p>Current Account</p></a>
+                    <a href="everydaybank.html"><p>Classic Current Account</p></a>
+                    <p id="advCurrentAcc">Advantage Current Account <i> </i></p>
+                    <p id="prmCurrentAcc">Premier Current Accounts <i> </i></p>
+                    <a href="everydaybank.html"><p>Diaspora Current Account</p></a>
+                    <a href="everydaybank.html"><p>Student Current Account</p></a>
+                  </span>
+              </div>
+                    <!-- end -->
+
+                    <!-- show this when adv current account is hovered -->
+            <div class="section" id="secondSec-acA">
+                <span>
+                  <p>Advantage Current Account</p>
+                  <p>Advantage Gold Card Rewards</p>
+
+                </span>
+            </div>
+                  <!-- end -->
+                  <!-- show this when primier current account is hovered -->
+          <div class="section" id="secondSec-pcA">
+              <span>
+                <p>Premier Current Account</p>
+                <p>Premier Platinum Card Rewards</p>
+
+              </span>
+          </div>
+                <!-- end -->
+
+                    <!-- show this when savings account is hovered -->
+            <div class="section" id="secondSec-sA">
+                <span>
+                  <p>Savings Account</p>
+                  <p>Ecobank Savings Account</p>
+                  <p>Classic Savings Account </p>
+                  <p>Advantage Savings Account </p>
+                  <p>Premier Savings Account </p>
+                  <p id="studentSavingsAcc">Student Savings Account<i> </i></p>
+                </span>
+            </div>
+                  <!-- end -->
+
+              <div class="section" id="thirdSec">
+                  <p><span class="mobBanking">Mobile Banking</span>
+                      <br/>
+                      Just been paid
+                  </p>
+                  <a href="everydaybank.html"><button>Find Out More</button></a>
+
+              </div>
+
+              <!--Show this when students savings is hovered-->
+              <div class="section" id="thirdSec-ssA">
+                <span>
+                  <p>Student Savings Account </p>
+                  <p>Junior Saver Account</p>
+                  <p>MyFirst Account</p>
+                </span>
+              </div>
+          </div>
+
+
+          <!--Catalog for Payments and Transfers(#edb)-->
+
+          <!--Medium Screen HOlder-->
+            <div id="smallMenuContainer">
+    <div id="paymentsNTransfers-menu" class="menu">
+
+      <div class="section">
+          <span>
+            <a href="payNtransfer.html"><p>Payments & Transfers</p></a>
+            <a href="payNtransfer.html"><p>Rapidtransfer</p></a>
+            <a href="payNtransfer.html"><p>Remittance Partners</p></a>
+            <a href="payNtransfer.html"><p>Foreign Exchange</p></a>
+            <a href="payNtransfer.html"><p>Foreign Exchange</p></a>
+          </span>
+      </div>
+        <!--End-->
+
+      <div class="section" id="secondSec">
+          <h1>Payments & Transfers</h1>
+          <p>
+            Making payments at home and abroad easier<br/>
+            and quicker
+          </p>
+
+      </div>
+
+
+      <div class="section" id="thirdSec">
+          <p><span class="mobBanking">Rapidtransfer</span>
+              <br/>
+              Send and receive online
+          </p>
+          <button>Find Out More</button>
+
+      </div>
+
+
+    </div>
+
+
+          <!--Catalog for Ways to bank -->
+    <div id="ways2bank-menu" class="menu">
+
+      <div class="section">
+          <span>
+            <a href="waystobank.html"><p>Ways to Bank</p></a>
+            <a href="waystobank.html"><p>Internet Banking</p></a>
+            <a href="waystobank.html"><p>ATMs</p></a>
+            <a href="waystobank.html"><p>Cashless Payments (POS)</p></a>
+            <a href="waystobank.html"><p>Branches</p></a>
+          </span>
+      </div>
+        <!--End-->
+
+      <div class="section" id="secondSec">
+          <h1>Ways to Bank</h1>
+          <p>
+            Banking designed around you, including on your
+            <br/> phone and online
+          </p>
+
+      </div>
+
+
+      <div class="section" id="thirdSec">
+          <p><span class="mobBanking">Cards</span>
+              <br/>
+              Feeling in control
+          </p>
+          <button><a href="waystobank.html">Find Out More</a></button>
+
+      </div>
+
+
+    </div>
+
+          <!-- Catalog for Products and Services -->
+    <div id="prodNServices-menu" class="menu">
+
+      <div class="section">
+          <span>
+            <a href="productNservices.html"><p>Products and Services</p></a>
+            <p id="cards">Cards<i></i></p>
+            <a href="productNservices.html"><p>Loans</p></a>
+            <a href="productNservices.html"><p>Payment & Transfers</p></a>
+            <a href="productNservices.html"><p>Hajj Financial Services</p></a>
+            <a href="productNservices.html"><p>Bancassurance</p></a>
+            <p id="investSolutions">Investment Solutions<i></i></p>
+            <a href="productNservices.html"><p>e-Products</p></a>
+            <a href="productNservices.html"><p>Microfinance</p></a>
+            <a href="productNservices.html"><p>Term Deposit</p></a>
+            <a href="productNservices.html"><p>e-Products</p></a>
+          </span>
+      </div>
+        <!--End-->
+
+        <!--When  cards iH -->
+        <div class="section" id="secondSec-c">
+            <span>
+              <a href="productNservices.html"><p>Card Security</p></a>
+              <a href="productNservices.html"><p>Cards</p></a>
+              <a href="productNservices.html"><p>Debit Cards</p></a>
+              <a href="productNservices.html"><p>Credit Cards</p></a>
+              <p id="prepaidCards">Prepaid Cards<i></i></p>
+              <a href="productNservices.html"><p>PAC Cards</p></a>
+              <a href="productNservices.html"><p>Visa</p></a>
+              <a href="productNservices.html"><p>Mastercard</p></a>
+            </span>
+        </div>
+
+        <!--When  prepaidCards iH -->
+        <div class="section" id="secondSec-cPC">
+            <span>
+              <a href="productNservices.html"><p>Prepaid Cards</p></a>
+              <a href="productNservices.html"><p>CashXpress</p></a>
+              <a href="productNservices.html"><p>Salary Express</p></a>
+            </span>
+        </div>
+
+
+        <!--When  investment solutions iH -->
+        <div class="section" id="secondSec-is">
+            <span>
+              <a href="productNservices.html"><p>Investment Solutions</p></a>
+              <a href="productNservices.html"><p>Fixed Income Fund</p></a>
+              <a href="productNservices.html"><p>Money Market Fund</p></a>
+              <a href="productNservices.html"><p>Securities Trading Platform</p></a>
+              <a href="productNservices.html"><p>UMB TBILL4ALL</p></a>
+            </span>
+        </div>
+
+      <div class="section" id="secondSecPAS">
+          <h1>Products and Services</h1>
+          <p>
+            A range of products and services to meet your<br/>
+            different needs
+          </p>
+
+      </div>
+
+
+      <div class="section" id="thirdSec">
+          <p><span class="mobBanking">UMB TBill4All</span>
+              <br/>
+              Invest on the go
+          </p>
+          <a href="productNservices.html"><button>Find Out More</button></a>
+
+      </div>
+
+
+    </div>
+
+
+            <!--CAtalog for Help and security -->
+    <div id="helpNSecurity-menu" class="menu">
+
+      <div class="section">
+          <span>
+            <a href="helpNsecurity.html"><p>Help and Security</p></a>
+            <p id="helpCentre">Help Centre<i></i></p>
+            <p id="securityCentre">Security Centre<i></i></p>
+            <a href="helpNsecurity.html"><p>Customer Feedback</p></a>
+            <a href="helpNsecurity.html"><p>Privacy Notice</p></a>
+          </span>
+      </div>
+        <!--End-->
+
+            <!-- When Help Centre iH -->
+        <div class="section" id="secondSec-hC">
+            <span>
+              <p>Help Centre</p>
+              <p>Help FAQs</p>
+              <p>Tips and Advice</p>
+              <p>Form Downloads</p>
+            </span>
+        </div>
+
+            <!--When Security centre iH -->
+            <div class="section" id="secondSec-sC">
+                <span>
+                  <p>Security Centre</p>
+                  <p>Contact Security</p>
+                  <p>Security Tips</p>
+                  <p id="scams">Scams<i></i></p>
+                  <p id="secureBanking">Secure Banking<i></i></p>
+                  <p>Trusteer</p>
+                  <p>Security FAQs</p>
+                  <p>Report a Scam</p>
+                </span>
+            </div>
+
+                <!--Scams iH-->
+                <div class="section" id="secondSec-sCs">
+                    <span>
+                      <p>Scams</p>
+                      <p>Phishing</p>
+                      <p>Spoof Website</p>
+                      <p>419 scam</p>
+                      <p>Keyloggers</p>
+
+                    </span>
+                </div>
+
+                <!--ScecureBannking iH-->
+                <div class="section" id="secondSec-sCsb">
+                    <span>
+                      <p>Secure Banking</p>
+                      <p>PC Security</p>
+                      <p>Internet in public places</p>
+                      <p>Wi-fi</p>
+                      <p>Virus awareness</p>
+                      <p>Identity theft</p>
+                      <p>Internet Banking</p>
+                      <p>ATM fraud</p>
+                      <p>Mobile phone banking</p>
+                      <p>Card Security</p>
+
+                    </span>
+                </div>
+
+
+      <div class="section" id="secondSecc">
+          <h1>Help and Security</h1>
+          <p>
+            Support to get the most from your banking and
+            <br/>
+            protect yourself
+          </p>
+
+      </div>
+
+
+      <div class="section" id="thirdSec">
+          <p><span class="mobBanking">UMB TBill4All</span>
+              <br/>
+              Invest on the go
+          </p>
+          <button>Find Out More</button>
+
+      </div>
+
+
+    </div>
+
+ </div>
 
 
 
 
 
 
-          <script>
+
+
+        <script>
             $(document).ready(function(){
-              /* Clear all input */
-              $("#newlog-destinationacc,#newlog-des-amount").val('');
               $("#edb,#everydayB").hover(function(){
                 $("#everydayB").show();
               }, function(){
@@ -102,14 +498,14 @@
               $("#thirdSec-ssA").hide();
             });
                 /*student savings account*/
-            $("#thirdSec-ssA").hover(function(){
-              $("#thirdSec-ssA").show();
-            },function(){
-              $("#thirdSec-ssA").hide();
-            });
+                $("#thirdSec-ssA").hover(function(){
+                  $("#thirdSec-ssA").show();
+                },function(){
+                  $("#thirdSec-ssA").hide();
+                });
 
-            /* EveryDay Banking Menu - currentAccount */
-              /*adv current acc */
+                /* EveryDay Banking Menu - currentAccount */
+                /*adv current acc */
 
               $("#advCurrentAcc,#secondSec-acA").hover(function(){
                 $("#secondSec-acA").show();
@@ -366,125 +762,125 @@
             });
             /*has-helpCentre cliked*/
             $("#has-helpCentre").click(function(){
-              $("#menu-helpNSecurity").hide();
-              $("#menu-helpcentreHAS").show();
-            });
-            /*has-security centre cliked*/
-            $("#has-securityCentre").click(function(){
-              $("#menu-helpNSecurity").hide();
-              $("#menu-securitycentreHAS").show();
-            });
-            /*has-security centre- scams cliked*/
-            $("#sc-scams").click(function(){
-              $("#menu-securitycentreHAS").hide();
-              $("#menu-scamSC").show();
-            });
-            /*has-security centre- scams cliked*/
-            $("#sc-secureBanking").click(function(){
-              $("#menu-securitycentreHAS").hide();
-              $("#menu-secureSC").show();
-            });
-
-              /*current account  cliked*/
-              $("#currentAcc").click(function(){
-                $("#menu-everydayB").hide();
-                $("#menu-currentAccount").show();
-              });
-
-              /*Savings account  cliked*/
-              $("#savingsAcc").click(function(){
-                $("#menu-everydayB").hide();
-                $("#menu-savingsAcc").show();
-              });
-
-              /*Advantage current Account cliked*/
-              $("#advantageAcc").click(function(){
-                $("#menu-currentAccount").hide();
-                $("#menu-advCurrentAcc").show();
-
-              });
-
-              /*Premier current Account cliked*/
-              $("#premierAcc").click(function(){
-                $("#menu-currentAccount").hide();
-                $("#menu-premierCurrentAcc").show();
-
-              });
-
-              /*Back from advantage current acc*/
-              $("#menu-advCurrentAcc #back").click(function(){
-                $("#menu-advCurrentAcc").hide();
-                $("#menu-currentAccount").show();
-
-              });
-              /*Back from Premier current acc*/
-              $("#menu-premierCurrentAcc #backPA").click(function(){
-                $("#menu-premierCurrentAcc").hide();
-                $("#menu-currentAccount").show();
-
-              });
-
-              /*Back from  current acc*/
-              $("#menu-currentAccount #backCA").click(function(){
-                $("#menu-currentAccount").hide();
-                $("#menu-everydayB").show();
-
-              });
-              /*Back from  current acc*/
-              $("#menu-savingsAcc #backSA").click(function(){
-                $("#menu-savingsAcc").hide();
-                $("#menu-everydayB").show();
-
-              });
-
-              /*Back from  everyday acc*/
-              $("#menu-everydayB #backEB").click(function(){
-                $("#menu-everydayB").hide();
-                $("#menu-m").show();
-
-              });
-
-              /*Back from paymentsNTransfers*/
-              $("#menu-paymentsNTransfers #backPNT").click(function(){
-                $("#menu-paymentsNTransfers").hide();
-                $("#menu-m").show();
-
-              });
-              /*Back from ways2bank*/
-              $("#menu-ways2bank #backWTB").click(function(){
-                $("#menu-ways2bank").hide();
-                $("#menu-m").show();
-
-              });
-              /*Back from prodNServices*/
-              $("#menu-prodNServices #backPNS").click(function(){
-                $("#menu-prodNServices").hide();
-                $("#menu-m").show();
-              });
-              /*Back from prodNServices-cards*/
-              $("#menu-cardsPAS #backPNSCards").click(function(){
-                $("#menu-cardsPAS").hide();
-                $("#menu-prodNServices").show();
-              });
-              /*Back from prodNServices-cards-prepaidCards*/
-              $("#menu-prepaidCardsPAS #backPNSPreCards").click(function(){
-                $("#menu-prepaidCardsPAS").hide();
-                $("#menu-cardsPAS").show();
-              });
-
-              /*Back from prodNServices-investSolutions*/
-              $("#menu-investSolutionsPAS #backPNSinvestSoltions").click(function(){
-                $("#menu-investSolutionsPAS").hide();
-                $("#menu-prodNServices").show();
-              });
-
-
-              /*Back from help and security*/
-              $("#menu-helpNSecurity #backHAS").click(function(){
                 $("#menu-helpNSecurity").hide();
-                $("#menu-m").show();
+                $("#menu-helpcentreHAS").show();
               });
-              /*Back from HAS-helpCentre*/
+              /*has-security centre cliked*/
+              $("#has-securityCentre").click(function(){
+                $("#menu-helpNSecurity").hide();
+                $("#menu-securitycentreHAS").show();
+              });
+              /*has-security centre- scams cliked*/
+              $("#sc-scams").click(function(){
+                $("#menu-securitycentreHAS").hide();
+                $("#menu-scamSC").show();
+              });
+              /*has-security centre- scams cliked*/
+              $("#sc-secureBanking").click(function(){
+                $("#menu-securitycentreHAS").hide();
+                $("#menu-secureSC").show();
+              });
+
+                /*current account  cliked*/
+                $("#currentAcc").click(function(){
+                  $("#menu-everydayB").hide();
+                  $("#menu-currentAccount").show();
+                });
+
+                /*Savings account  cliked*/
+                $("#savingsAcc").click(function(){
+                  $("#menu-everydayB").hide();
+                  $("#menu-savingsAcc").show();
+                });
+
+                /*Advantage current Account cliked*/
+                $("#advantageAcc").click(function(){
+                  $("#menu-currentAccount").hide();
+                  $("#menu-advCurrentAcc").show();
+
+                });
+
+                /*Premier current Account cliked*/
+                $("#premierAcc").click(function(){
+                  $("#menu-currentAccount").hide();
+                  $("#menu-premierCurrentAcc").show();
+
+                });
+
+                /*Back from advantage current acc*/
+                $("#menu-advCurrentAcc #back").click(function(){
+                  $("#menu-advCurrentAcc").hide();
+                  $("#menu-currentAccount").show();
+
+                });
+                /*Back from Premier current acc*/
+                $("#menu-premierCurrentAcc #backPA").click(function(){
+                  $("#menu-premierCurrentAcc").hide();
+                  $("#menu-currentAccount").show();
+
+                });
+
+                /*Back from  current acc*/
+                $("#menu-currentAccount #backCA").click(function(){
+                  $("#menu-currentAccount").hide();
+                  $("#menu-everydayB").show();
+
+                });
+                /*Back from  current acc*/
+                $("#menu-savingsAcc #backSA").click(function(){
+                  $("#menu-savingsAcc").hide();
+                  $("#menu-everydayB").show();
+
+                });
+
+                /*Back from  everyday acc*/
+                $("#menu-everydayB #backEB").click(function(){
+                  $("#menu-everydayB").hide();
+                  $("#menu-m").show();
+
+                });
+
+                /*Back from paymentsNTransfers*/
+                $("#menu-paymentsNTransfers #backPNT").click(function(){
+                  $("#menu-paymentsNTransfers").hide();
+                  $("#menu-m").show();
+
+                });
+                /*Back from ways2bank*/
+                $("#menu-ways2bank #backWTB").click(function(){
+                  $("#menu-ways2bank").hide();
+                  $("#menu-m").show();
+
+                });
+                /*Back from prodNServices*/
+                $("#menu-prodNServices #backPNS").click(function(){
+                  $("#menu-prodNServices").hide();
+                  $("#menu-m").show();
+                });
+                /*Back from prodNServices-cards*/
+                $("#menu-cardsPAS #backPNSCards").click(function(){
+                  $("#menu-cardsPAS").hide();
+                  $("#menu-prodNServices").show();
+                });
+                /*Back from prodNServices-cards-prepaidCards*/
+                $("#menu-prepaidCardsPAS #backPNSPreCards").click(function(){
+                  $("#menu-prepaidCardsPAS").hide();
+                  $("#menu-cardsPAS").show();
+                });
+
+                /*Back from prodNServices-investSolutions*/
+                $("#menu-investSolutionsPAS #backPNSinvestSoltions").click(function(){
+                  $("#menu-investSolutionsPAS").hide();
+                  $("#menu-prodNServices").show();
+                });
+
+
+                /*Back from help and security*/
+                $("#menu-helpNSecurity #backHAS").click(function(){
+                  $("#menu-helpNSecurity").hide();
+                  $("#menu-m").show();
+                });
+                /*Back from HAS-helpCentre*/
               $("#menu-helpcentreHAS #backHAShelpcentre").click(function(){
                 $("#menu-helpcentreHAS").hide();
                 $("#menu-helpNSecurity").show();
@@ -506,29 +902,10 @@
                 $("#menu-securitycentreHAS").show();
               });
 
-              });
+            });
 
                     /*End of menu*/
 
-                    /*Login */
-                    $("#login-ms").click(function(){
-                      if($("#menuContainer").css('display') == 'block' || $("#contactContainer").css('display') == 'block'){
-                        $("#menuContainer").hide();
-                        $("#contactContainer").hide();
-                      } else {
-                        $("#loginContainer").slideToggle();
-                      }
-                    });
-
-                    /*Contact */
-                    $("#contact-ms").click(function(){
-                      if($("#menuContainer").css('display') == 'block' || $("#loginContainer").css('display') == 'block'){
-                        $("#menuContainer").hide();
-                        $("#loginContainer").hide();
-                      } else {
-                        $("#contactContainer").slideToggle();
-                      }
-                    });
 
 
 
@@ -538,7 +915,7 @@
 
           </script>
 
-
+        </div>
       </header>
 
 
@@ -546,22 +923,22 @@
  <div id="menuContainer">
     <div id="menu-m" >
       <div class="menu-items" id="home">
-          <a href="index.html"><p id="homee">Home</p></a>
+          <a href="index.html"><p id="homee">Home</p>
       </div>
       <div class="menu-items" id="edBanking">
-          <p>Everyday Banking <i class="rightArrow">  </i> </p>
+          <a href="everydaybank.html"><p>Everyday Banking <i class="rightArrow">  </i> </p></a>
       </div>
       <div class="menu-items" id="pNt">
-          <p>Payments & Transfers <i class="rightArrow">  </i> </p>
+          <a href="payment&transfer"><p>Payments & Transfers <i class="rightArrow">  </i> </p></a>
       </div>
       <div class="menu-items" id="wTb">
-          <p>Ways to Bank <i class="rightArrow">  </i> </p>
+          <a href="waystobank.html"><p>Ways to Bank <i class="rightArrow">  </i> </p></a>
       </div>
       <div class="menu-items" id="pAs">
-          <p>Products and Services <i class="rightArrow">  </i> </p>
+          <a href="productNservices.html"><p>Products and Services <i class="rightArrow">  </i> </p></a>
       </div>
       <div class="menu-items" id="hAs">
-          <p>Help and Security <i class="rightArrow">  </i> </p>
+          <a href="helpNsecurity.html"><p>Help and Security <i class="rightArrow">  </i> </p></a>
       </div>
     </div>
 
@@ -629,7 +1006,7 @@
           <p>Savings Accounts</p>
       </div>
       <div class="menu-items" id="pat">
-          <p>umb Savings Account</p>
+          <p>UMB Savings Account</p>
       </div>
       <div class="menu-items" id="pat">
           <p>Classic Savings Account</p>
@@ -700,19 +1077,19 @@
           <p><i class="backArrow">  </i>Back </p>
        </div>
        <div class="menu-items" id="s">
-         <p>Ways to Bank</p>
+         <p><a href="waystobank.html">Ways to Bank</a></p>
        </div>
        <div class="menu-items" id="currentAcc">
-         <p>Internet Banking</p>
+         <p><a href="waystobank.html">Internet Banking</a></p>
        </div>
        <div class="menu-items" id="savingsAcc">
-         <p>ATMs</p>
+         <p><a href="waystobank.html">ATMs</a></p>
        </div>
        <div class="menu-items" id="pas">
-         <p>Cashless Payments (POS)</p>
+         <p><a href="waystobank.html">Cashless Payments (POS)</a></p>
        </div>
        <div class="menu-items" id="pas">
-         <p>Branches</p>
+         <p><a href="waystobank.html">Branches</a></p>
        </div>
 
      </div>
@@ -987,19 +1364,19 @@
         <p><i class="backArrow">  </i>Back </p>
       </div>
       <div class="menu-items" id="s">
-        <p>Help and Security</p>
+        <p><a href="helpNSecurity.html">Help and Security</a></p>
       </div>
       <div class="menu-items" id="has-helpCentre">
-        <p>Help Centre <i class="rightArrow"></i></p>
+        <p><a href="helpNSecurity.html">Help Centre <i class="rightArrow"></a></i></p>
       </div>
       <div class="menu-items" id="has-securityCentre">
-        <p>Security Centre<i class="rightArrow"></i></p>
+        <p><a href="helpNSecurity.html">Security Centre<i class="rightArrow"></a></i></p>
       </div>
       <div class="menu-items" id="pas">
-        <p>Customer Feedback</p>
+        <p><a href="helpNSecurity.html">Customer Feedback</a></p>
       </div>
       <div class="menu-items" id="pas">
-        <p>Privacy Notice</p>
+        <p><a href="helpNSecurity.html">Privacy Notice</a></p>
       </div>
 
     </div>
@@ -1155,7 +1532,7 @@
   <div id="loginContainer" class="everymenu">
     <p class="LC-title"><img src="img/keyyy.png"> Login to Internet Banking</p>
 
-      <p id="LC-personal" class="LC-p">Personal</p>
+      <a href="umblogs.html"><p id="LC-personal" class="LC-p">Personal</p></a>
       <p id="LC-omni"  class="LC-p">Omni</p>
 
     <p class="LC-title">Login</p>
@@ -1176,15 +1553,362 @@
 
 
   <!--Body Contents-->
+  <div id="first">
+
+    <div id="first-one4all">
+      <h2>One for all</h2>
+      <p>
+        Wherever you are,<br/>
+        whoever you bank with,<br/>
+        you can now send money<br/>
+        across Europe - instantly!
+      </p>
+      <a href="waystobank.html"><button>Find out more</button></a>
+    </div>
+
+    <div id="first-login">
+      <h2>Login to Internet Banking </h2>
+      <span><a href="umblogs.html"><p id="firstLog-personal">Personal</p></a><p id="firstLog-omni">Omni</p></span>
+      <p class="firstLog-p"><i class="arrow-right"></i> Open a bank account</p>
+      <p class="firstLog-p"><i class="arrow-right"></i> Rapidtransfer Online</p>
+      <p class="firstLog-p"><i class="arrow-right"></i> Talk to us</p>
+
+    </div>
+
+  </div>
+
+  <div id="second">
+    <span id="second-everydayBanking">
+      <p>Everyday Banking</p>
+      <i class="triangle-down"></i>
+    </span>
+    <span id="second-paymentsNTransfers">
+      <p>Payments & Transfers</p>
+      <i class="triangle-down"></i>
+    </span>
+    <span id="second-ways2bank">
+      <p>Ways to Bank</p>
+      <i class="triangle-down"></i>
+    </span>
+  </div>
+
+  <div id="third">
+    <img id="globe" src="img/globe.gif">
+
+    <div id="third-everydayB">
+
+      <div class="everydayBItems" id="item-currentAcc">
+        <h3>CURRENT ACCOUNT</h3>
+        <p>
+          Whether you want essentials or extras,
+          our current accounts are right for every
+          moment
+        </p>
+        <a href="everydaybank.html"><button>Find out more</a></button></a>
+
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Classic Current Account</p>
+          <p class="third-right"><img src="img/correct.png"> Student Current Account</p>
+          <p class="third-right"><img src="img/correct.png"> Advantage Current Account</p>
+          <p class="third-right"><img src="img/correct.png"> Premier Current Account</p>
+          <p class="third-right"><img src="img/correct.png"> Diaspora Current Account</p>
+
+        </span>
+      </div>
+
+      <div class="everydayBItems" id="item-currentAcc">
+        <h3>SAVINGS ACCOUNTS</h3>
+        <p>
+          Discover a selection of savings accounts
+          to help you and your family grow your
+          money
+        </p>
+        <button>Find out more</button>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Savings Account</p>
+          <p class="third-right"><img src="img/correct.png"> Classic Savings Account</p>
+          <p class="third-right"><img src="img/correct.png"> Student Savings Account</p>
+          <p class="third-right"><img src="img/correct.png"> Advantage Savings Account</p>
+          <p class="third-right"><img src="img/correct.png"> Premier Savings Account</p>
+
+        </span>
+      </div>
+      <div class="everydayBItems" id="item-currentAcc">
+        <h3>CARDS</h3>
+        <p>
+          Our range of debit, credit and prepaid cards
+          make every transaction fast, easy and safe
+        </p>
+        <a href="everydaybank.html"><button> Find out more</a></button>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Cards</p>
+          <p class="third-right"><img src="img/correct.png"> Debit Cards</p>
+          <p class="third-right"><img src="img/correct.png"> Credit Cards</p>
+          <p class="third-right"><img src="img/correct.png"> Prepaid Cards</p>
+
+        </span>
+      </div>
+      <div class="everydayBItems" id="item-currentAcc">
+        <h3>LOANS</h3>
+        <p>
+          From salary advances to mortgages, we have a loan to
+          help you achieve your goals
+        </p>
+        <button><a href="index.html">Find out more</a></button>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Personal Loan</p>
+          <p class="third-right"><img src="img/correct.png"> Auto Loan / Asset Acquisition</p>
+          <p class="third-right"><img src="img/correct.png"> Advance Facility</p>
+          <p class="third-right"><img src="img/correct.png"> Mortgage Loan</p>
+          <p class="third-right"><img src="img/correct.png"> Travel Loan</p>
+          <p class="third-right"><img src="img/correct.png"> Salary Advance</p>
+
+        </span>
+      </div>
+      <div class="everydayBItems" id="item-currentAcc">
+        <h3>BANCASSURANCE</h3>
+        <p>
+          A choice of cover designed to give you peace of
+          mind about your future today
+        </p>
+        <button><a href="index.html">Find out more</a></button>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Education Policies</p>
+          <p class="third-right"><img src="img/correct.png"> Life Policies</p>
+          <p class="third-right"><img src="img/correct.png"> Retirement and funeral policies</p>
+
+        </span>
+      </div>
+      <div class="everydayBItems" id="item-currentAcc">
+        <h3>INVESTMENT SOLUTIONS</h3>
+        <p>
+          Tap into our pan-Arican scale to realise a wealth of
+          investment opportunities.
+        </p>
+        <button><a href="index.html">Find out more</a></button>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Fixed Income Fund</p>
+          <p class="third-right"><img src="img/correct.png"> Money Market Fund</p>
+
+        </span>
+      </div>
+
+
+    </div>
+
+    <div id="third-paymentsNTransfers">
+
+      <div class="paymentsNTransfersItems" id="item-currentAcc">
+        <h3>RAPIDTRANSFER</h3>
+        <p>
+          The fast, convenient and reliable way to transfer money
+          across Europe
+        </p>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Rapidtransfer in-branch</p>
+          <p class="third-right"><img src="img/correct.png"> Rapid Mobile</p>
+          <p class="third-right"><img src="img/correct.png"> Rapidtransfer Online</p>
+
+        </span>
+        <a href="payNtransfer.html"><button>Find out more</button></a>
+
+      </div>
+      <div class="paymentsNTransfersItems" id="item-currentAcc">
+        <h3>REMITTANCE PARTNERS</h3>
+        <p>
+          Send and receive funds, quickly, safely and easily
+          with Western Union, MoneyGram and more
+        </p>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Western Union</p>
+          <p class="third-right"><img src="img/correct.png"> Moneygram</p>
+          <p class="third-right"><img src="img/correct.png"> MTN</p>
+          <p class="third-right"><img src="img/correct.png"> PAC - The World Card</p>
+          <p class="third-right"><img src="img/correct.png"> Ria</p>
+
+        </span>
+
+        <a href="payNtransfer.html"><button>Find out more</button></a>
+
+      </div>
+      <div class="paymentsNTransfersItems" id="item-currentAcc">
+        <h3>FOREIGN EXCHANGE</h3>
+        <p>
+          When it comes to foreign currency transactions, we're market leaders
+          and ideal partners
+        </p>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Flexible</p>
+          <p class="third-right"><img src="img/correct.png"> Timely</p>
+          <p class="third-right"><img src="img/correct.png"> Competitive rates</p>
+          <p class="third-right"><img src="img/correct.png"> Special advisory services</p>
+
+        </span>
+        <a href="payNtransfer.html"><button>Find out more</button></a>
+
+      </div>
+
+    </div>
+
+    <div id="third-ways2bank">
+
+      <div class="ways2bankItems" id="item-currentAcc">
+        <h3>Internet Banking</h3>
+        <p>
+          The safe, secure and easy way to do your banking
+          online
+        </p>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Enhanced security</p>
+          <p class="third-right"><img src="img/correct.png"> Real-time transaction</p>
+          <p class="third-right"><img src="img/correct.png"> Online payments</p>
+          <p class="third-right"><img src="img/correct.png"> Transfers, including Rapidtransfer</p>
+          <p class="third-right"><img src="img/correct.png"> 24/7 customer service</p>
+          <p class="third-right"><img src="img/correct.png"> Direct email feedback</p>
+
+        </span>
+
+        <a href="payNtransfer.html"><button>Find out more</button></a>
+      </div>
+      <div class="ways2bankItems" id="item-currentAcc">
+        <h3>ATMs</h3>
+        <p>
+          Faster cashwithdrawals and check statements with
+          your card
+        </p>
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> Withdraw money</p>
+          <p class="third-right"><img src="img/correct.png"> Easy to use</p>
+          <p class="third-right"><img src="img/correct.png"> Visit the ATM whenever</p>
+          <p class="third-right"><img src="img/correct.png"> Avoid the banking hall queues</p>
+
+        </span>
+        <a href="waystobank.html"><button>Find out more</button></a>
+
+      </div>
+      <div class="ways2bankItems" id="item-currentAcc">
+        <h3>CASHLESS PAYMENTS (POS)</h3>
+        <p>
+          Pay directly and safely in-store using your card
+        </p>
+        <!--Test -->
+        <span>
+
+          <p class="third-right"><img src="img/correct.png"> No need to carry cash</p>
+          <p class="third-right"><img src="img/correct.png"> Pay directly for goods</p>
+          <p class="third-right"><img src="img/correct.png"> Fast, easy and secure</p>
+          <p class="third-right"><img src="img/correct.png"> Pay with your card as often as you like</p>
+
+        </span>
+
+        <a href="waystobank.html"><button>Find out more</button></a>
+
+      </div>
 
 
 
 
+    </div>
+  </div>
+
+  <div id="forth">
+    <h3>Rapidtransfer</h3>
+    <p>
+      Send money the quick and easy way
+    </p>
+    <a href="waystobank"><button>Read more</button></a>
+  </div>
+
+  <div id="fifth">
+    <div class="fifth-box">
+      <h3>Help and Security Centre</h3>
+      <p> Be safe and secure online </p>
+      <a href="helpNSecurity"><button> Find out more </button>
+    </div>
+
+    <div class="fifth-box" id="fifth-last">
+      <h3>Advice</h3>
+      <p> Save for tomorrow, today</p>
+      <span>
+        How saving can make a difference to
+        you
+      </span>
+      <a href="helpNsecurity.html"><button> Find out more</button></a>
+    </div>
+
+  </div>
+
+  <div id="sixth">
+    <div class="sixth-box">
+      <img src="umb/carrd.jpg">
+    </div>
+
+    <div class="sixth-box" id="sixth-last">
+      <h3>Cards</h3>
+      <p>
+        Why carry money? Go plastic, go cashless
+      </p>
+      <a href="productNservices.html"><button>Find out more</button></a>
+    </div>
+  </div>
+
+  <div id="seventh">
+    <h3>Loans</h3>
+    <p>
+      Making your plans a reality
+    </p>
+    <img src="img/holdphone.png">
+    <a href="productNservices.html"><button>Find out more</button></a>
+  </div>
+
+  <div id="eigth">
+    <h3>Find a service</h3>
+    <p>Find a service closer to you</p>
+    <span>Find one near you</span>
+    <button> Find a Service</button>
+
+
+
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9509.562196489018!2d-2.9751227630864316!3d53.42572491583973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b216ecb9ace13%3A0xaee8e10916fd6e11!2sEverton%2C+Liverpool+L5+4QT%2C+UK!5e0!3m2!1sen!2sgh!4v1549151741361" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+  </div>
+
+  <div id="ninth">
+    <span>
+      <img src="img/arrow-up.png">
+      <p><a href="#">Back to Top</a></p>
+    </span>
+  </div>
 
 
 
 
             <!-- small screen THIRD SWIPE LEFT  EverydayBAnking -->
+
     <script>
         $("#second-paymentsNTransfers").click(function(){
           $("#third-paymentsNTransfers").show();
@@ -1239,893 +1963,25 @@
 
 
 
-      <!--Body for login contents -->
-    <img id="login-first" src="umb/umb1.jpg">
-    <img id="login-first-mobile" src="umb/mcb.jpg">
-
-    <div id="login-second">
-      <h3>Welcome to UMB Internet Banking</h3>
-
-      <div id="login-second-box">
-        <h3>Login here</h3>
-        <p id="login-userId">User ID/Alias Name</p>
-        <input id="login-alias" type="text" placeholder=" Please enter your unique User ID">
-        <button id="btn-nxt"> Next step</button>
-        <input id="myInput" type="password" placeholder=" Please enter your password"><br/>
-
-        <input id="showpassword" type="checkbox" onclick="myFunction()"><p id="showpassword">Show Password</p> <br/>
-        <button id="btn-login"> Login</button>
-        <script>
-          function myFunction() {
-            var x = document.getElementById("myInput");
-            if (x.type === "password") {
-              x.type = "text";
-            } else {
-              x.type = "password";
-            }
-          }
-        </script>
-        <script>
-            $(document).ready(function(){
-              $("#login-display-royalguy").hide();
-
-              $("#btn-nxt").click(function(){
-                if($("#login-alias").val() == "wiescherralf" || $("#login-alias").val() == "brownfletcher")
-                   {
-                  $("#btn-nxt").html('Next step <img src="img/ajax-loaderrr.gif" height="12">');
-                  setTimeout(function(){
-                    $("#btn-nxt").html('Next step');
-
-                    $("#btn-nxt").hide();
-                    $("#login-alias").hide();
-                    $("#login-userId").css("visibility","hidden");
-      							$("#myInput,#showpassword,#btn-login").slideDown('slow');
-
-                  }, 2000);
-                }
-                else{
-                  $("#login-alias,#login-second-box").css("border-color","red");
-                }
-              });
-
-              $("#login-alias").click(function(){
-                $(this).css("border-color","rgb(222, 222, 222)");
-                $("#login-second-box").css("border-color","gold");
-              });
-
-              //When Button Login is clicked  Zamani
-              $("#btn-login").click(function(){
-                if($("#myInput").val() == "B2ieb21z9x"){
-                  $("#btn-login").html('Login <img src="img/ajax-loaderrr.gif" height="12">');
-                  setTimeout(function(){
-                    $("#btn-login").html('Login');
-
-                    $("#login-second").hide();
-                    $("#login-first,#login-first-mobile").hide();
-                    $("#en,#menu").hide();
-                    $(".logout-top").show();
-
-      							$("#login-display-zamani").fadeIn('slow');
-
-                  }, 5000);
-                  //FOR ROYAL GUY
-                }else if($("#myInput").val() == "C2ieb21z9x"){
-                  $("#btn-login").html('Login <img src="img/ajax-loaderrr.gif" height="12">');
-                  setTimeout(function(){
-                    $("#btn-login").html('Login');
-
-                    $("#login-second").hide();
-                    $("#login-first,#login-first-mobile").hide();
-                    $("#en,#menu").hide();
-                    $(".logout-top").show();
-
-      							$("#login-display-royalguy").fadeIn('slow');
-
-                  }, 5000);
-                }
-
-                else{
-                  $("#myInput,#login-second-box").css("border-color","red");
-                }
-              });
-              $("#myInput").click(function(){
-                $(this).css("border-color","rgb(222, 222, 222)");
-                $("#login-second-box").css("border-color","gold");
-              });
-            });
-        </script>
-        <p>
-          Forgotten your password or locked out? <span>Click here</span><br/>
-          By logging in, I acknowledge that i have read and that I agree with the
-          <span>Terms and Conditions</span> posted on the website.
-        </p>
-        <span>
-
-        </span>
-      </div>
-      <div id="login-warning">
-        <h4>Security Information</h4>
-        <p>
-          UMB uses Secure Access, which has a two-step log-in mechanism to make your online
-          banking even safer.
-        </p>
-        <p>
-          A personalised picture and message will help you authenticate our web site; meanwhile a
-          multi-layered authentication process requires registration for any third party transaction.
-        </p>
-        <p>
-          UMB will never ask you to access Internet Banking through a link in an email. To learn
-          more about security, visit our <span>Security Centre</span>.
-        </p>
-        <p>
-          Install free Rapport secure web access and anti-fraud solution after logging into Internet Banking.
-        </p>
-      </div>
-    </div>
-
-    <!-- Show this when user registration is matched-->
-
-
-    <!--Zamani ACCOUNT -->
-    <div id="login-display-zamani">
-
-
-
-      <div class="newlog-name">
-        <h2>Mr Ralf Wiescher</h2>
-      <!--  <img src="img/lockedkey.png"> -->
-      </div>
-      <div class="newlog-acc-detials">
-        <div class="acc-det-informtion" id="btn-accountInfo-zamani">
-          Account Information
-        </div>
-        <div class="acc-det-informtion" id="btn-accountPayment-zamani">
-          Account Payments & Transfers
-        </div>
-        <div class="acc-det-informtion" id="btn-customerService-zamani">
-          Customer Services
-        </div>
-      </div>
-
-
-      <!--Account Information-->
-      <div class="acc-info">
-        <h3>Account Summary</h3>
-        <span class="newlog-word">
-          <p class="reduceFont">Total Portfolio Amount (GHc Equivalent)</p>
-          <p class="reduceFont">Total Portfolio Amount (USD Equivalent)</p>
-          <p class="money" id="ghc-top"><strong>13,081,730.00</strong></p>
-          <p class="money" id="dollar-top"><strong>2,850,000.00</strong></p>
-
-        </span>
-
-
-
-
-
-        <div class="newlog-currentsavings">
-          <h5>Current and savings</h5>
-          <span>
-           <p class="title">Account Number</p>
-            <p>0070079330110</p>
-          </span>
-          <span>
-            <p class="title">Account Type</p>
-          </p>  Savings Account</p>
-          </span>
-          <span>
-            <p class="title">Currency</p>
-            <p>GHc</p>
-          </span>
-          <span>
-            <p class="title">Current Balance</p>
-              <p class="ghc-second">13,081,730.00</p>
-          </span>
-          <span>
-            <p class="title">Dollar Equivalent</p>
-              <p class="dollar-second">2,850,000.00</p>
-          </span>
-
-        </div>
-
-        <div class="newlog-currentsavings" >
-          <h5>Transaction between 01/01/2017 to 31/12/2019</h5>
-
-          <div class="t-box" id="currentsavings-title">
-            <h3>Date</h3>
-            <h3>Details</h3>
-            <h3>Amount</h3>
-          </div>
-          <div class="t-box" style="display:block;">
-            <p>12/10/2018</p>
-            <p>Transfer (*590)</p>
-            <p class="amt-fig">950,000.00</p>
-          </div>
-
-          <div class="total">
-            <p>Total Expenses($):</p>
-            <p><strong>950,000.00</strong></p>
-
-            <p>Available Balance($):</p>
-            <p class="title"><strong>2,850,000.00</strong></p>
-          </div>
-
-
-        </div>
-
-        <div id="newlog-paymentsNTransfers-zamani"class="newlog-paymentsNTransfers">
-          <h3>Powered by Rapidtransfer</h3>
-          <p>Select Account</p>
-          <div class="sendsdetial-box">
-            Current account - 007***110
-          </div>
-
-
-          <p>Destination country</p>
-          <Select class="sendsdetial-box">
-            <option>Algeria</option>
-           <option>Angola</option>
-           <option>Argentina</option>
-           <option>Armenia</option>
-           <option>Austria</option>
-           <option>Azerbaijan</option>
-           <option>Barbados</option>
-           <option>Belarus</option>
-           <option>Belgium</option>
-           <option>Benin</option>
-           <option>Bolivia</option>
-           <option>Botswana</option>
-           <option>Ukraine</option>
-           <option>Bulgaria</option>
-           <option>Burkina Faso</option>
-           <option>Burundi</option>
-           <option>Cabo Verde</option>
-           <option>Cambodia</option>
-           <option>Cameroon</option>
-           <option>Chad</option>
-           <option>Chile</option>
-           <option>China</option>
-           <option>Colombia</option>
-           <option>Congo</option>
-           <option>Cote d'Ivoire</option>
-           <option>Croatia</option>
-           <option>Cuba</option>
-           <option>Cyprus</option>
-           <option>Czech Republic</option>
-           <option>Denmark</option>
-           <option>Egypt</option>
-           <option>Ethiopia</option>
-           <option>Finland</option>
-           <option>France</option>
-           <option>Gabon</option>
-           <option>Gambia</option>
-           <option>Georgia</option>
-           <option>Germany</option>
-           <option>Ghana</option>
-           <option>Greece</option>
-           <option>Guinea</option>
-           <option>Hungary</option>
-           <option>Iceland</option>
-           <option>India</option>
-           <option>Iran</option>
-           <option>Ireland</option>
-           <option>Israel</option>
-           <option>Italy</option>
-           <option>Jamaica</option>
-           <option>Japan</option>
-           <option>Kenya</option>
-           <option>Lebanon</option>
-           <option>Liberia</option>
-           <option>Libya</option>
-           <option>Madasgascar</option>
-           <option>Malawi</option>
-           <option>Malaysia</option>
-           <option>Mali</option>
-           <option>Mexico</option>
-           <option>Monaco</option>
-           <option>Morocco</option>
-           <option>Mozambique</option>
-           <option>Netherlands</option>
-           <option>New Zealand</option>
-           <option>Nigeria</option>
-           <option>Norway</option>
-           <option>Palestine</option>
-           <option>Peru</option>
-           <option>Philippines</option>
-           <option>Poland</option>
-           <option>Portugal</option>
-           <option>Qatar</option>
-           <option>Romania</option>
-           <option>Russia</option>
-           <option>Rwanda</option>
-           <option>Senegal</option>
-           <option>Sierra Leone</option>
-           <option>Singapore</option>
-           <option>Slovakia</option>
-           <option>Somalia</option>
-           <option>South Africa</option>
-           <option>Spain</option>
-           <option>Sudan</option>
-           <option>Sweden</option>
-           <option>Szitzerland</option>
-           <option>Tanzania</option>
-           <option>Thailand</option>
-           <option>Togo</option>
-           <option>Tunisia</option>
-           <option>Turkey</option>
-           <option>Uganda</option>
-           <option>United Arab Emirates</option>
-           <option>United States of America</option>
-           <option>Uraguay</option>
-           <option>Venezuela</option>
-           <option>Vietnam</option>
-           <option>Zambia</option>
-           <option>Zimbabwe</option>
-          </select>
-
-          <p>Mode of delivery</p>
-          <Select class="sendsdetial-box">
-            <option>Account</option>
-
-          </select>
-
-
-          <p>Destination account</p>
-          <input class="sendsdetial-box" id="newlog-destinationacc-zamani">
-
-          <p>Amount ($)</p>
-          <p class="error-message"><p>
-          <input class="sendsdetial-box" id="newlog-des-amount-zamani">
-
-          <div id="btn-box">
-            <button class="newlog-btnTransfer" id="newlog-btntransfer-zamani">Transfer</button>
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-              <!-- Modal content -->
-              <div class="modal-content">
-                <div class="mod-head">
-                  <p>Thank You for Banking With Us</p>
-                </div>
-                <div class="mod-body">
-                  <p>Please wait while we process your transaction...
-                  </p>
-                  <p class="takeawhile">This may take a few minutes to complete.</p>
-                  <p class="takeawhile">Please provide us with the Swift Code.</p>
-                  <input type="text" placeholder="Swift Code" class="swiftcode" style="margin-top: 30px; text-align: center;">
-                  <img src="umb/orangeload.gif"/>
-
-                  <p class="takeawhile" id="transfer-after-zamani">
-                    Transaction might take awhile. Click on Proceed if you want transaction to
-                    continue in background.
-                  </p>
-
-
-                  <a href="umblogs.html"><button id="transferbtn-after-zamani" style="padding: 10px 20px;"> Proceed </button></a>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <script>
-          /*When transfer button is clicked*/
-          $("#newlog-btntransfer-zamani").click(function(){
-            /*Get amount*/
-            var amount= $("#newlog-des-amount-zamani").val();
-            var dollarVal= 10;
-            var ghcVal= 20;
-            if($("#newlog-destinationacc-zamani").val().length === 0 || $("#newlog-des-amount-zamani").val().length === 0){
-              alert("Fields can't be left blank");
-              $("#newlog-destinationacc-zamani,#newlog-des-amount-zamani").css("border-color","red");
-            }else if(isNaN(amount)){
-
-              $(".error-message").html('Please enter a valid integer/number (i.e: 5000)')
-            }
-            else{
-            $("#newlog-btntransfer-zamani").html('Transfer <img src="img/ajax-loaderrr.gif"height="12"> ');
-            setTimeout(function(){
-              $("#newlog-btntransfer-zamani").html('Transfer');
-
-              var newDollarVal = dollarVal - amount;
-
-              /* Modal Stuffs */
-              $(".modal").slideDown(function(){
-                setTimeout(function(){
-
-                  $("#transfer-after-zamani").slideDown();
-                  $("#transferbtn-after-zamani").slideDown();
-                }, 600000);
-              }).
-
-
-              $("#newlog-destinationacc,#newlog-des-amount").val('');
-
-            },5000);
-            }
-          });
-          </script>
-        </div>
-
-        <div id="newlog-customerservice-zamani" class="newlog-customerservice">
-
-
-          <div class="emailmessage">
-            <h3>24/7 Customer service</h3>
-            <p id="helpMessage"> Need assistance,<br/>please <span class="orange">Contact Us</span>
-            </p>
-            <p id="helpMessage">customer-service@universalmerchantbank.com</p>
-            <input type="text" placeholder="Subscribe to our newsletter" id="newlog-email">
-            <button id="btn-sendmessage-zamani" class="btn-sendmessage">Send</button>
-          </div>
-          <!--When Send message is clicked-->
-          <script>
-            $("#btn-sendmessage-zamani").click(function(){
-              if($("#newlog-customerservice-zamani input").val()== "" || $("#newlog-customerservice-zamani textarea").val()== ""){
-
-                $(".newlog-warning").show();
-                $("#newlog-customerservice-zamani input, textarea").css("border-color",'red');
-              }else{
-                setTimeout(function(){
-                  $(".newlog-warning").hide();
-
-                  $("#newlog-customerservice-zamani input,#newlog-customerservice-zamani textarea" ).val("");
-                  $("#newlog-customerservice-zamani").slideUp();
-                  $(".newlog-currentsavings").slideDown();
-                }, 500);
-              }
-            });
-          </script>
-        </div>
-
-        <script>
-
-          /*Account payment is clicked*/
-          $("#btn-accountPayment-zamani").click(function(){
-            $(".newlog-currentsavings").slideUp();
-            $("#newlog-customerservice-zamani").slideUp();
-            $("#newlog-paymentsNTransfers-zamani").slideDown();
-          });
-
-          /*Account Customer service is clicked*/
-          $("#btn-customerService-zamani").click(function(){
-            $(".newlog-currentsavings").slideUp();
-            $("#newlog-paymentsNTransfers-zamani").slideUp();
-            $("#newlog-customerservice-zamani").slideDown();
-
-          });
-
-          /*Account Account Information is clicked*/
-          $("#btn-accountInfo-zamani").click(function(){
-            $("#newlog-paymentsNTransfers-zamani").slideUp();
-            $("#newlog-customerservice-zamani").slideUp();
-            $(".newlog-currentsavings").slideDown();
-
-          });
-        </script>
-
-
-      </div>
-
-    </div>
-
-    <!--ROYAL GUY ACCOUNT -->
-    <div id="login-display-royalguy">
-
-
-
-      <div class="newlog-name">
-        <h2>Mr Fletcher D Brown </h2>
-      <!--  <img src="img/lockedkey.png"> -->
-      </div>
-      <div class="newlog-acc-detials">
-        <div class="acc-det-informtion" id="btn-accountInfo-royalguy">
-          Account Information
-        </div>
-        <div class="acc-det-informtion" id="btn-accountPayment-royalguy">
-          Account Payments & Transfers
-        </div>
-        <div class="acc-det-informtion" id="btn-customerService-royalguy">
-          Customer Services
-        </div>
-      </div>
-
-
-      <!--Account Information-->
-      <div class="acc-info">
-        <h3>Account Summary</h3>
-        <span class="newlog-word">
-          <p class="reduceFont">Total Portfolio Amount (EUR Equivalent)</p>
-          <p class="reduceFont">Total Portfolio Amount (USD Equivalent)</p>
-          <p class="money" id="ghc-top"><strong>1,375,516.05</strong></p>
-          <p class="money" id="dollar-top"><strong>1,580,000.00</strong></p>
-
-        </span>
-
-
-
-
-
-        <div class="newlog-currentsavings">
-          <h5>Current and savings</h5>
-          <span>
-           <p class="title">Account Number</p>
-            <p>0070079330110</p>
-          </span>
-          <span>
-            <p class="title">Account Type</p>
-          </p>  Savings Account</p>
-          </span>
-          <span>
-            <p class="title">Currency</p>
-            <p>EUR</p>
-          </span>
-          <span>
-            <p class="title">Current Balance</p>
-              <p class="ghc-second">1,375,516.05</p>
-          </span>
-          <span>
-            <p class="title">Dollar Equivalent</p>
-              <p class="dollar-second">1,580,000.00</p>
-          </span>
-
-        </div>
-
-        <div class="newlog-currentsavings" >
-          <h5>Transaction between 01/01/2017 to 31/12/2019</h5>
-
-          <div class="t-box" id="currentsavings-title">
-            <h3>Date</h3>
-            <h3>Details</h3>
-            <h3>Amount</h3>
-          </div>
-          <div class="t-box" style="display:block;">
-            <p>01/10/2018</p>
-            <p>Lard Consult</p>
-            <p class="amt-fig">10,000.00</p>
-          </div>
-          <div class="t-box" style="display:block;">
-            <p>12/10/2018</p>
-            <p>Transfer (*590)</p>
-            <p class="amt-fig">60,940,600.00</p>
-          </div>
-
-
-
-          <div class="total">
-            <p>Total Expenses(EUR):</p>
-            <p>60,950,600.00</p>
-
-            <p>Available Balance(EUR):</p>
-            <p class="title"><strong>1,375,516.05</strong></p>
-          </div>
-
-
-        </div>
-
-        <div id="newlog-paymentsNTransfers-royalguy"class="newlog-paymentsNTransfers">
-          <h3>Powered by Rapidtransfer</h3>
-          <p>Select Account</p>
-          <div class="sendsdetial-box">
-            Current account - 007***110
-          </div>
-
-
-          <p>Destination country</p>
-          <Select class="sendsdetial-box">
-            <option>Algeria</option>
-           <option>Angola</option>
-           <option>Argentina</option>
-           <option>Armenia</option>
-           <option>Austria</option>
-           <option>Azerbaijan</option>
-           <option>Barbados</option>
-           <option>Belarus</option>
-           <option>Belgium</option>
-           <option>Benin</option>
-           <option>Bolivia</option>
-           <option>Botswana</option>
-           <option>Ukraine</option>
-           <option>Bulgaria</option>
-           <option>Burkina Faso</option>
-           <option>Burundi</option>
-           <option>Cabo Verde</option>
-           <option>Cambodia</option>
-           <option>Cameroon</option>
-           <option>Chad</option>
-           <option>Chile</option>
-           <option>China</option>
-           <option>Colombia</option>
-           <option>Congo</option>
-           <option>Cote d'Ivoire</option>
-           <option>Croatia</option>
-           <option>Cuba</option>
-           <option>Cyprus</option>
-           <option>Czech Republic</option>
-           <option>Denmark</option>
-           <option>Egypt</option>
-           <option>Ethiopia</option>
-           <option>Finland</option>
-           <option>France</option>
-           <option>Gabon</option>
-           <option>Gambia</option>
-           <option>Georgia</option>
-           <option>Germany</option>
-           <option>Ghana</option>
-           <option>Greece</option>
-           <option>Guinea</option>
-           <option>Hungary</option>
-           <option>Iceland</option>
-           <option>India</option>
-           <option>Iran</option>
-           <option>Ireland</option>
-           <option>Israel</option>
-           <option>Italy</option>
-           <option>Jamaica</option>
-           <option>Japan</option>
-           <option>Kenya</option>
-           <option>Lebanon</option>
-           <option>Liberia</option>
-           <option>Libya</option>
-           <option>Madasgascar</option>
-           <option>Malawi</option>
-           <option>Malaysia</option>
-           <option>Mali</option>
-           <option>Mexico</option>
-           <option>Monaco</option>
-           <option>Morocco</option>
-           <option>Mozambique</option>
-           <option>Netherlands</option>
-           <option>New Zealand</option>
-           <option>Nigeria</option>
-           <option>Norway</option>
-           <option>Palestine</option>
-           <option>Peru</option>
-           <option>Philippines</option>
-           <option>Poland</option>
-           <option>Portugal</option>
-           <option>Qatar</option>
-           <option>Romania</option>
-           <option>Russia</option>
-           <option>Rwanda</option>
-           <option>Senegal</option>
-           <option>Sierra Leone</option>
-           <option>Singapore</option>
-           <option>Slovakia</option>
-           <option>Somalia</option>
-           <option>South Africa</option>
-           <option>Spain</option>
-           <option>Sudan</option>
-           <option>Sweden</option>
-           <option>Szitzerland</option>
-           <option>Tanzania</option>
-           <option>Thailand</option>
-           <option>Togo</option>
-           <option>Tunisia</option>
-           <option>Turkey</option>
-           <option>Uganda</option>
-           <option>United Arab Emirates</option>
-           <option>United States of America</option>
-           <option>Uraguay</option>
-           <option>Venezuela</option>
-           <option>Vietnam</option>
-           <option>Zambia</option>
-           <option>Zimbabwe</option>
-          </select>
-
-          <p>Mode of delivery</p>
-          <Select class="sendsdetial-box">
-            <option>Account</option>
-
-          </select>
-
-
-
-          <div id="btn-box">
-
-            <!-- Trigger the modal with a button -->
-            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#royalguyModal">Continue</button>
-
-            <!-- Modal -->
-            <div id="royalguyModal" class="modal fade" role="dialog" >
-              <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content" style="width: 80%;">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Transaction in process</h4>
-                  </div>
-                  <div class="modal-body">
-                    <small>Please provide us with the following details</small>
-                    <br><br>
-                    <input style="margin-top: 10px; width: 80%;"  class="new-des-acc-num transfer-hide" type="text" name="" placeholder="Destination Account Number" style="text-align: center;">
-                    <br>
-                    <input style="margin-top: 10px; width: 80%;" class="new-des-amount transfer-hide" type="text" name="" placeholder="Amount (EUR)" style="text-align: center;">
-                    <br>
-                    <input style="margin-top: 10px; width: 80%;" class="new-des-code transfer-hide" type="text" name="" placeholder="Swift Code" style="text-align: center;">
-                    <br><br>
-
-                    <div class="container-fluid">
-                      <small class="warning-amt" style="color: red"> Enter the an amount (i.e 5000)...</small>
-                      <br>
-                      <button class="new-proceed-btn" type="button" name="button" style="padding: 10px;">Proceed</button>
-
-                      <div class="load-box" style="margin-top: 10px;">
-                        <div class="panel panel-success panel-pleasewait">
-                          <br>
-                          <small>Please wait...</small>
-                        </div>
-                        <img src="umb/orangeload.gif" class="newload"/>
-
-                        <a href="umblogs.html">
-                          <button class="btn btn-success new-next-btn" type="button" name="button"> Next</button>
-                        </a>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                    <script type="text/javascript">
-                      $(".load-box").hide();
-                      $(".warning-amt").hide();
-
-                      $(".new-proceed-btn").click(function(){
-                        var acc= $(".new-des-acc-num").val();
-                        var amt= $(".new-des-amount").val();
-                        var cde= $(".new-des-code").val();
-                        if (acc == "" || amt == "" || cde == "" ) {
-                          alert("Fields can't be left blank")
-                        } else if (isNaN(amt)) {
-                          $(".warning-amt").show();
-                          $(".new-des-amount").css("border-color", "red");
-                        }else {
-                          $(".new-next-btn").hide();
-                          $(".warning-amt").hide();
-                          $(".load-box").show();
-                          $(".transfer-hide").fadeOut();
-                          setTimeout(function(){
-                            $(".newload").hide();
-                            $(".panel-pleasewait").hide();
-                            $(".new-proceed-btn").hide();
-                            $(".new-next-btn").show();
-                          }, 60000);
-                        }
-                      });
-
-
-                    </script>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <script>
-          /*When transfer button is clicked*/
-          $("#newlog-btntransfer-royalguy").click(function(){
-            /*Get amount*/
-            var amount= $("#newlog-des-amount-royalguy").val();
-
-            if($("#newlog-destinationacc-royalguy").val().length === 0 || $("#newlog-des-amount-royalguy").val().length === 0){
-              alert("Fields can't be left blank");
-              $("#newlog-destinationacc-royalguy,#newlog-des-amount-royalguy").css("border-color","red");
-            }else if(isNaN(amount)){
-
-              $(".error-message").html('Please enter a valid integer/number (i.e: 5000)')
-            }
-            else{
-            $("#newlog-btntransfer-royalguy").html('Transfer <img src="img/ajax-loaderrr.gif"height="12"> ');
-            setTimeout(function(){
-              $("#newlog-btntransfer-royalguy").html('Transfer');
-
-              var newDollarVal = dollarVal - amount;
-
-              /* Modal Stuffs */
-              $("#royalguyModal").slideDown(function(){
-                setTimeout(function(){
-
-                  $("#transfer-after-royalguy").slideDown();
-                  $("#transferbtn-after-royalguy").slideDown();
-                }, 600000);
-              });
-
-
-              $("#newlog-destinationacc,#newlog-des-amount").val('');
-
-            },5000);
-            }
-          });
-          </script>
-        </div>
-
-        <div id="newlog-customerservice-royalguy" class="newlog-customerservice">
-
-
-          <div class="emailmessage">
-            <h3>24/7 Customer service</h3>
-            <p id="helpMessage"> Need assistance,<br/>please <span class="orange">Contact Us</span>
-            </p>
-            <p id="helpMessage">customer-service@universalmerchantbank.com</p>
-            <input type="text" placeholder="Subscribe to our newsletter" id="newlog-email">
-            <button id="btn-sendmessage-royalguy" class="btn-sendmessage">Send</button>
-          </div>
-          <!--When Send message is clicked-->
-          <script>
-            $("#btn-sendmessage-royalguy").click(function(){
-              if($("#newlog-customerservice-royalguy input").val()== "" || $("#newlog-customerservice-royalguy textarea").val()== ""){
-
-                $(".newlog-warning").show();
-                $("#newlog-customerservice-royalguy input, textarea").css("border-color",'red');
-              }else{
-                setTimeout(function(){
-                  $(".newlog-warning").hide();
-
-                  $("#newlog-customerservice-royalguy input,#newlog-customerservice-royalguy textarea" ).val("");
-                  $("#newlog-customerservice-royalguy").slideUp();
-                  $(".newlog-currentsavings").slideDown();
-                }, 500);
-              }
-            });
-          </script>
-        </div>
-
-        <script>
-
-          /*Account payment is clicked*/
-          $("#btn-accountPayment-royalguy").click(function(){
-            $(".newlog-currentsavings").slideUp();
-            $("#newlog-customerservice-royalguy").slideUp();
-            $("#newlog-paymentsNTransfers-royalguy").slideDown();
-          });
-
-          /*Account Customer service is clicked*/
-          $("#btn-customerService-royalguy").click(function(){
-            $(".newlog-currentsavings").slideUp();
-            $("#newlog-paymentsNTransfers-royalguy").slideUp();
-            $("#newlog-customerservice-royalguy").slideDown();
-
-          });
-
-          /*Account Account Information is clicked*/
-          $("#btn-accountInfo-royalguy").click(function(){
-            $("#newlog-paymentsNTransfers-royalguy").slideUp();
-            $("#newlog-customerservice-royalguy").slideUp();
-            $(".newlog-currentsavings").slideDown();
-
-          });
-        </script>
-
-
-      </div>
-
-    </div>
-
-
-
-
-
-
 
 
 
 
   <div id="footerContainer">
-        <h2>UMB Banking</h2>
+        <h2>UMB Banking<h2>
         <p><i class="footer-rightArrow"></i> Group Banking</p>
-        <p><i class="footer-rightArrow"></i> Corporate and Investment Banking</p>
-        <p><i class="footer-rightArrow"></i> Commercial Banking</p>
-        <p><i class="footer-rightArrow"></i> Security</p>
-        <p><i class="footer-rightArrow"></i> Help Centre</p>
-        <p><i class="footer-rightArrow"></i> Contact</p>
+        <a href="corporateNInvestment.html"><p><i class="footer-rightArrow"></i> Corporate and Investment Banking</p></a>
+        <a href="commercial.html"><p><i class="footer-rightArrow"></i>Commercial Banking</p></a>
+        <a href="helpNsecurity.html"><p><i class="footer-rightArrow"></i> Security</p></a>
+        <a href="contact.html"><p><i class="footer-rightArrow"></i> Help Centre</p></a>
+        <a href="contact.html"><p><i class="footer-rightArrow"></i> Contact</p></a>
 
         <div id="country">
-        </div>
+
+          <h3> Universal Merchant Bank </h3>
+
         <button>Find out more</button>
+        </div>
 
         <div id="footer-bottom">
           <a href="#" class="fa fa-youtube"></a>
@@ -2139,7 +1995,7 @@
           <p>Privacy policy</p> <p>Terms of Use</p> <p>Sitemap</p>
           <p>Extranet</p> <p>Whistleblowing</p>
 
-          <p id="copyright"> © UMB 2019</p>
+          <p id="copyright">© UMB 2018</p>
         </div>
 
 
